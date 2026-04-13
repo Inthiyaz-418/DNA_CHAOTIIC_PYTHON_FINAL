@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        background-image: url('static/contact.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+    }
+
+    .glass-box {
+        background: rgba(0, 0, 0, 0.55);
+        padding: 45px;
+        border-radius: 20px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .info {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .btn-custom {
+        padding: 15px 35px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0px 5px 12px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+        transform: scale(1.08);
+    }
+
+    .btn-return {
+        background-color: #00e6e6;
+        color: black;
+    }
+
+</style>
+
+</head>
+<body class="container">
+
+<div class="glass-box">
+
+    <h2>📞 Contact Information</h2>
+
+    <p class="info"><b>👤 Name:</b> GONEGANDLA INTHIYAZ BASHA</p>
+    <p class="info"><b>📧 Email:</b> inthiyazgonegandla@gmail.com</p>
+    <p class="info"><b>📱 Phone:</b> 7013371418</p>
+
+    <a href="{{ url_for('index') }}" class="btn btn-custom btn-return mt-4">
+        🔙 Return Home
+    </a>
+
+</div>
+
+</body>
+</html>

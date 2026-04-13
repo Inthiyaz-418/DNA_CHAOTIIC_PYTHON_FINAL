@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Encryption and Decryption using Chaotic-DNA Algorithm</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        background-image: url('static/home.gif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+    }
+
+    .title-box {
+        background: rgba(0,0,0,0.55);
+        padding: 25px;
+        border-radius: 18px;
+        display: inline-block;
+    }
+
+    .btn-custom {
+        padding: 15px 30px;
+        font-size: 22px;
+        border-radius: 50px;
+        font-weight: bold;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+        transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+        transform: scale(1.07);
+    }
+
+    .btn-about {
+        background: #ffcc00;
+        color: black;
+    }
+
+    .btn-detect {
+        background: #00d1ff;
+        color: black;
+    }
+
+    .btn-contact {
+        background: #ff4dd2;
+        color: white;
+    }
+</style>
+
+</head>
+<body class="text-center py-5">
+
+<div class="title-box">
+    <h1>🔐 Image Encryption and Decryption using <br> Chaotic-DNA Algorithm 🧬</h1>
+    <p class="lead mt-3">✨ Choose an option below to explore the system ✨</p>
+</div>
+
+<div class="mt-5 d-flex justify-content-center gap-4 flex-wrap">
+
+  <a href="{{ url_for('about') }}" class="btn btn-custom btn-about">
+    📘 About
+  </a>
+
+  <a href="{{ url_for('detect') }}" class="btn btn-custom btn-detect">
+    🛰️ Detect
+  </a>
+
+  <a href="{{ url_for('contact') }}" class="btn btn-custom btn-contact">
+    📞 Contact
+  </a>
+
+</div>
+
+</body>
+</html>
